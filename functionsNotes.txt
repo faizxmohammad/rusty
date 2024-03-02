@@ -1,0 +1,40 @@
+In rust you can declare a function by using 'fn' keyword followed by your function name (rust folloes snake case lettering)
+
+In rust you can return a value from a function using 2 ways:
+1. using return statement"
+
+
+fn main(){
+    let value = my_function(2,3);
+    println!("{}", value);
+}
+fn my_function(x:i32, y:i32) -> i32{ // i32 defines the return type of a function
+    return x + y;
+}
+
+Note: here '-> i32' defines the return type of a function
+
+2. By not using the return statement
+
+fn main(){
+    let value = my_function(2,3);
+    println!("{}", value);
+}
+fn my_function(x:i32, y:i32) -> i32{ 
+    x + y
+}
+
+Here we ommited the return key word also the semi-colon (";").
+This makes the function to return the value directly;
+
+Few more examples without using return:
+
+fn main(){
+    let value = my_function(2,3);
+    println!("{}", value);
+}
+fn my_function(x:i32, y:i32) -> i32{ 
+    println!("{}", x);
+    println!("{}", y);
+    x + y
+}

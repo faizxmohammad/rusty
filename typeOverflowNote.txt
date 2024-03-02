@@ -1,0 +1,6 @@
+In debug release if there is any datatype over flow error: rust will panic. In Java terms--> throws an exception.
+
+In release build rust performs a 2's compliment on that datatype to reduce it into lower value.
+
+What is 2's compliment ?
+// Todo learn 2's compliment
